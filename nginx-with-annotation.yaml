@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: nginx-with-annotation
+  labels:
+    team: makerindo2022
+    version: 1.2.5
+    environment: production1.0
+  annotations:
+    desciption: ini adalah app buatan tim makerindo
+    apapun: apapun itu..
+spec:
+  containers:
+    - name: nginx
+      image: nginx
+      ports:
+        - containerPort: 80
